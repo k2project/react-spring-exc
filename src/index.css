@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+html{
+    height: 100%;
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+ul, li{
+    list-style: none;
+}
+button{
+    border: none;
+    padding:1.5rem 3rem;
+    font-size: 1.2rem;
+    margin: 5rem auto;
+    background: #fff;
+    display: inline-block;
+
+}
+button.fixed{
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    margin-left: -7rem;
+    background: #222;
+    color: #eee;
+    width: 14rem;
+}
