@@ -6,7 +6,7 @@ function Project1(){
     const [toggled, setToggled] = useState(false);
     const alertStyle = useSpring({
         opacity: toggled? 1 : 0,
-        top: toggled? 0 : -100
+        transform: toggled? 'scale(1)' : 'scale(2)'
     })
     const textStyle = useSpring({
         transform: toggled?'scale(0)' : 'scale(1)'

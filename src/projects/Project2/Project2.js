@@ -11,8 +11,8 @@ function Project2(){
         transform: toggled?'scale(0) rotate(360deg)' : 'scale(1) rotate(0deg)'
     })
     const trail = useTrail(list.length, {
-        from: { marginLeft: -40, opacity: 0, transform: 'translate3d(0,-40px,0)' },
-        to: { marginLeft: 0, opacity: 1, transform: 'translate3d(0,0px,0)' }
+        from: { left: -40, opacity: 0, transform: 'translate3d(0,-40px,0)' },
+        to: { left: 0, opacity: 1, transform: 'translate3d(0,0px,0)' }
     })
 
     function handleClick(){
