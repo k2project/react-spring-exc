@@ -38,7 +38,7 @@ var mouse = {x:-100,y:-100};
 var mouseOnScreen = false;
 
 var itercount = 0;
-var itertot = 100;
+var itertot = 50;
 
 this.initialize = function(canvas_id){
     canvas = document.getElementById(canvas_id);
@@ -61,9 +61,9 @@ this.initialize = function(canvas_id){
 
 var start = function(){
 
-    bgContext.fillStyle = "#000000";
+    bgContext.fillStyle = "#f6f6f6";
     bgContext.font = '300px impact';
-    bgContext.fillText(keyword, 85, 275);
+    bgContext.fillText(keyword, 380, 470);
 
     clear();
     getCoords();
