@@ -1,0 +1,22 @@
+@import './../../App.scss';
+.Project6{
+    font-size: 12rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding-top: 13rem;
+    span{
+        display: inline-block;
+        z-index: 2;
+    }
+
+    .shadow{
+        top: -4.5rem;
+        transform: rotateX(180deg);
+        span{
+              background: -webkit-linear-gradient(#F6F6F6,#f0f0f0, #ddd);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              z-index: 1;
+        }
+    }
+}

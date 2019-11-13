@@ -6,14 +6,8 @@ function Project5(){
     const [toggled, setToggled] = useState(false);
     const [list, setList] = useState(['P','R','i','D','E']);
 
-    // const {x} = useSpring({
-    //     from:{x:0},
-    //     x:toggled? 1: 0,
-    //     config:{duration:1000}
-    // })
+
     const trail = useTrail(list.length, {
-        // from: { left: -40, opacity: 0, transform: 'translate3d(0,-40px,0)' },
-        // to: { left: 0, opacity: 1, transform: 'translate3d(0,0px,0)' }
             from:{x:0},
             x:toggled? 1: 0,
             config:{duration:3000}
