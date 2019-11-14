@@ -8,6 +8,18 @@
         display: grid;
         font-size: 3rem;
     }
+    span{
+        display: inline-block;
+        position: absolute;
+        width: 5rem;
+        height: 100%;
+        background: yellow;
+        display: grid;
+        align-content: center;
+        font-size: 6rem;
+        font-weight: bolder;
+        line-height: 1;
+    }
 }
 
 

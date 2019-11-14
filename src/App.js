@@ -7,6 +7,8 @@ import Project3 from './projects/Project3/Project3';
 import Project4 from './projects/Project4/Project4';
 import Project5 from './projects/Project5/Project5';
 import Project6 from './projects/Project6/Project6';
+import Project7 from './projects/Project7/Project7';
+
 
 function App() {
   return (
@@ -15,9 +17,10 @@ function App() {
           <div className="Projects">
               <Project1/>
               <Project2/>
-              {/* <Project3/> */}
               <Project5/>
               <Project6/>
+              <Project7/>
+              <Project4/>
           </div>
       </div>
   );

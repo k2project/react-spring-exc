@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Project1.scss';
-import {useSpring, animated, interpolate} from 'react-spring';
+import {useSpring, animated} from 'react-spring';
 
 function Project1(){
     const [toggled, setToggled] = useState(false);

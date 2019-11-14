@@ -9,7 +9,7 @@ function Project5(){
 
     const trail = useTrail(list.length, {
             from:{x:0},
-            x:toggled? 1: 0,
+            to:{x:toggled? 1: 0},
             config:{duration:3000}
     })
 
