@@ -8,6 +8,7 @@ const Project4 = () => {
         to: [ {width:'100%'},{left:'100%'},{top:'100%', config:{duration:10}}, {left:'0%', config:{duration:10}},{background:'orange'},{top:'0%', config:config.default},{top:'-100%'},{background:'skyblue'}, {top:'0%'}],
         from: { width:'0%', left:'0%', top:'0%', background:'yellow'},
 
+
     });
      return (
         <div className="Project Project4">
