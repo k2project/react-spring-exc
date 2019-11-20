@@ -24,10 +24,11 @@ function Project7(){
 
     ]
     const interp = i => r =>{
-        if(i% 2){
-            return  `translate3d(0, ${10 * Math.sin(r + ( 2 * Math.PI))}px, 0)`
-        }
-        return  `translate3d(0, ${5 * Math.sin(r + (3 * Math.PI))}px, 0)`
+        // if(i% 2){
+        //     return  `translate3d(0, ${10 * Math.sin(r + ( 2 * Math.PI))}px, 0)`
+        // }
+        // return  `translate3d(0, ${5 * Math.sin(r + (2.5 * Math.PI))}px, 0)`
+        return  `translate3d(0, ${10 * Math.sin(r + ( i/2 * Math.PI))}px, 0)`
     }
     const {radians} = useSpring({
         from:{
