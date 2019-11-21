@@ -31,6 +31,7 @@ button{
     margin: 5rem auto;
     background: #fff;
     display: inline-block;
+    cursor: pointer;
 
 }
 button.fixed{

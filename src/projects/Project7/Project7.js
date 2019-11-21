@@ -6,30 +6,14 @@ import {Keyframes} from 'react-spring/renderprops'
 
 function Project7(){
     const dots = [
-        {
-            color:'#F3F29A',
-        },
-        {
-            color:'#FF8A0C',
-        },
-        {
-            color:'#3DBADB',
-        },
-        {
-            color:'#70DFA6',
-        },
-        {
-            color:'#CE61A2',
-        },
+        '#F3F29A',
+        '#FF8A0C',
+        '#3DBADB',
+        '#70DFA6',
+        '#CE61A2',
 
     ]
-    const interp = i => r =>{
-        // if(i% 2){
-        //     return  `translate3d(0, ${10 * Math.sin(r + ( 2 * Math.PI))}px, 0)`
-        // }
-        // return  `translate3d(0, ${5 * Math.sin(r + (2.5 * Math.PI))}px, 0)`
-        return  `translate3d(0, ${10 * Math.sin(r + ( i/2 * Math.PI))}px, 0)`
-    }
+    const interp = i => r =>  `translate3d(0, ${10 * Math.sin(r + ( i/3 * Math.PI))}px, 0) `;
     const {radians} = useSpring({
         from:{
             radians:0,
@@ -50,11 +34,12 @@ function Project7(){
         <div className= "Project Project7" >
             <div>
                 {dots.map((dot,i)=><animated.span key={'dot_'+i} style={{
-                    background:dots[i].color,
+                    background:dot,
                     transform: radians.interpolate(interp(i))
                 }} />)}
 
             </div>
+            <p>Loading...</p>
         </div>
     )
 }
